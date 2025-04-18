@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* NAVIGATION BAR */
+
+.navcontainer {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    background: black;
+    position: relative;
+    align-items: center;
+}
+
+.navcontainer a {
+    margin-left: 57px;
+}
+
+.navcontainer a img {
+    height: 64px;
+}
+
+#firstlist {
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+    gap: 5px;
+}
+
+#firstlist button {
+    display: flex;
+    height: 35px;
+    border-radius: 50px;
+    padding: 15px;
+    align-items: center;
+    background: black;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+#aboutimg {
+    filter: brightness(0) invert(1);
+}
+
+#firstlist button:hover {
+    background: #282828;
+}
+
+.secondul {
+    margin-left: 490px;
+    display: flex;
+}
+
+#secondlist {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+#secondlist button {
+    display: flex;
+    height: 35px;
+    border-radius: 50px;
+    padding: 15px;
+    align-items: center;
+    background: black;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+#secondlist button:hover {
+    background: #282828;
+}
+
+#enimage {
+    filter: brightness(0) invert(1);
+    margin-right: 8px;
+}
+
+#secondlist li #signupbtn {
+    background: #fff;
+    color: black;
+}
+
+/* SECTION */
+section {
+    width: 100%;
+    padding: 65px;
+}
+
+.inputs-map {
+    display: flex;
+    background: #fff;
+}
+
+.inputs {
+    width: 600px;
+
+}
+
+.inputs h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.inputs #pickupdiv {
+    width: 400px;
+    height: 50px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 18px;
+}
+
+.inputs #pickupdiv input {
+    width: 90%;
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    position: relative;
+}
+
+.line {
+    width: 0.5px;
+    height: 45px;
+    background-color: black;
+    position: absolute;
+    margin-left: 19.7px;
+    margin-top: 36px;
+}
+
+.inputs #pickupdiv #navigationimg {
+    width: 25px;
+}
+
+.inputs .dropoffdiv {
+    width: 400px;
+    height: 50px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 18px;
+}
+
+.dropoffdiv input {
+    width: 90%;
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    position: relative;
+}
+
+.today-nowbtn {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.today-nowbtn button {
+    display: flex;
+    width: 195px;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.today-nowbtn button img {
+    height: 17px;
+    width: 17px;
+    margin-right: 20px;
+
+}
+
+.today-nowbtn button #triangleimg {
+    margin-right: 0;
+    margin-left: 85px;
+}
+
+.seepricediv {
+    display: flex;
+}
+
+.seepricediv button {
+    height: 50px;
+    width: 130px;
+    border-radius: 10px;
+    background: black;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.activitytext {
+    margin-top: 10px;
+    margin-left: 27px;
+    line-height: 30px;
+}
+
+.map {
+    width: 600px;
+    height: 580px;
+    margin-left: 25px;
+    cursor: grab;
+}
+
+.map #mapimg {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+.map #plus-minus {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -97px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.map #plus-minus button {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+
+}
+
+.map #plusbtn {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.map #minusbtn {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.map #plus-minus button:hover {
+    background: #ccc;
+}
+
+.map .map-text {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 240px;
+    background: #d8d8d8;
+}
+
+.map .map-text p {
+    font-size: 10px;
+}
+
+.map #googletext {
+    position: absolute;
+    color: #fff;
+    text-shadow:
+        1px 1px 2px grey,
+        -1px -1px 2px grey,
+        1px -1px 2px grey,
+        -1px 1px 2px grey;
+    margin-top: 555px;
+    margin-left: -550px;
+    cursor: pointer;
+}
+
+/* SECTION TWO */
+.seciontwohead {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.suggestion {
+    display: flex;
+    gap: 20px;
+}
+
+.reserve-ride {
+    width: 370px;
+    height: 170px;
+    background: #f3f3f3;
+    padding: 20px 0px 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.reserve-ride img {
+    width: 128px;
+    height: 128px;
+}
+
+.reserve-text span {
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.reserve-text p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.reserve-text button {
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* SECTION THREE */
+
+.activitysection {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.activitysection h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.activitysection p {
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.activitysection button {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    height: 50px;
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: black;
+    margin-bottom: 20px;
+}
+
+.activitysection #signupuber {
+    width: 270px;
+}
+
+.activitysection hr {
+    margin-top: 5px;
+}
+
+/* SECTION FOUR */
+.sectionfour {
+    display: flex;
+    margin-top: 30px;
+}
+
+.secfourhead {
+    font-size: 35px;
+
+}
+
+.datetime {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    background: #9dcdd6;
+    height: 370px;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.datetime .datehead {
+    margin: 30px 0px;
+    font-size: 35px;
+    color: #282828;
+}
+
+.datetime span {
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.datebtn {
+    display: flex;
+    gap: 5px;
+}
+
+.datebtn button {
+    display: flex;
+    width: 195px;
+    align-items: center;
+    height: 50px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 25px;
+    cursor: pointer;
+    color: #282828;
+}
+
+.datebtn button img {
+    width: 17px;
+    height: 17px;
+    margin-right: 20px;
+}
+
+.datebtn button #triangleimage {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.datetime #nextbtn {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.datetime #nextbtn:hover {
+    background: #282828;
+}
+
+.watchimg {
+    height: 370px;
+    padding-left: 90px;
+    background: #9dcdd6;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.watchimg img {
+    height: 100%;
+    background: #9dcdd6;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.benefits {
+    width: 100%;
+    padding: 15px 40px;
+}
+
+.benefits h3 {
+    color: #282828;
+    margin-bottom: 40px;
+}
+
+.iconbenefits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.iconbenefits img {
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
+}
+
+.iconbenefits span {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.terms {
+    width: 80px;
+    color: #4b4b4b;
+    line-height: 25px;
+}
+
+.sectionfive {
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionfive img {
+    width: 550px;
+}
+
+.sectionfive .fivetext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 115px;
+    padding-top: 145px;
+}
+
+.sectionfive h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.sectionfive p {
+    margin-left: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.getstarted {
+    display: flex;
+    margin-left: -15px;
+    align-items: center;
+}
+
+.getstarted button {
+    width: 150px;
+    height: 50px;
+    background: black;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.alreadytext {
+    line-height: 30px;
+}
+
+/* SECTION SIX */
+
+.sectionsix {
+    display: flex;
+    width: 100%;
+}
+
+.sectionsix #secsiximg img {
+    width: 550px;
+    height: 550px;
+}
+
+.sectionsix .sixtext {
+    margin-bottom: 30px;
+    margin-top: 200px;
+    margin-right: 150px;
+}
+
+.sixtext h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.sixtext p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.checkbtn {
+    display: flex;
+    align-items: center;
+}
+
+.checkbtn button {
+    width: 150px;
+    height: 50px;
+    background: black;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.checkbtn hr{
+    margin-top: 5px;
+}
+
+/* SECTION SEVEN */
+.sectionseven{
+    display: flex;
+}
+#sevenimg img{
+    width:550px ;
+    height: 550px;
+}
+.seventext{
+    display: flex;
+    flex-direction: column;
+    padding-left: 115px;
+    padding-top: 145px;
+}
+.seventext h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.seventext p{
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+.seventext button{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* SECTION EIGHT */
+
+.sectioneight{
+    display: flex;
+    width: 100%; 
+    flex-direction: column;
+    background: #f6f6f6;
+    padding: 70px;
+}
+.sectioneight h1{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.cards{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.scannercard{
+    display: flex;
+    width: 550px;
+    height: 190px;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+.scannercard #scanimg{
+    width: 150px;
+    height: 150px;
+}
+.eightdiv{
+    width: 100%;
+    padding: 0;
+}
+.download{
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+/* FOOTER */
+
+footer{
+    background: black;
+    color: #fff;
+}
+.footercontainer{
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.footercontainer #iconuber img{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    margin-bottom: 10px;
+}
+#visit{
+    margin-bottom: 80px;
+}
+.alinks{
+    display: flex;
+
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    line-height: 40px;
+    
+}
+.links span{
+    font-size: 17px;
+    font-weight: 600;
+}
+.links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13.5px;
+}
+.links a:hover{
+    color: #4b4b4b;
+}
+.social-lang{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top:50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.socialmedia {
+    display: flex;
+}
+.socialmedia button{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background: black;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.socialmedia button:hover{
+    background: #4b4b4b;
+}
+.socialmedia img{
+    filter: brightness(0) invert(1);
+}
+.language{
+    display: flex;
+}
+.language button{
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: black;
+    cursor: pointer;
+}
+.language button img{
+    filter: brightness(0) invert(1);
+    margin-right: 10px;
+}
+.language button:hover{
+    background: #4b4b4b;
+}
+.appdownload{
+    display: flex;
+    flex-direction: row;
+    padding:50px 0 ;
+    gap: 10px;
+}
+.appdownload img{
+    height: 40px;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright span{
+    font-size: 12px;
+    color: grey;
+}
+.copyright ul{
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    color:grey;
+    gap: 20px;
+}
